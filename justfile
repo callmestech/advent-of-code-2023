@@ -1,9 +1,7 @@
-
 # Use `just work day-01 part1` to work on the specific binary for a specific day's problems
 work day part:
     cargo watch -x "check -p {{day}}" -s "just test {{part}} -p {{day}}" -s "just lint {{day}}" -s "just bench {{day}} {{part}}" -s "just flamegraph {{day}} {{part}}"
 lint day:
-    clippy-tracing --action check --exclude target --exclude benches --exclude www
     cargo clippy -p {{day}}
 test part +FLAGS='-p day-01':
     cargo nextest run {{FLAGS}} {{part}}
