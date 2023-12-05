@@ -1,5 +1,5 @@
 [package]
-name = "{{project-name}}"
+name = "day-04"
 version = "0.1.0"
 edition = "2021"
 
@@ -15,18 +15,11 @@ thiserror = { workspace = true }
 dhat = { workspace = true }
 
 [dev-dependencies]
-criterion = { workspace = true }
 divan = { workspace = true }
-rstest = { workspace = true }
 
 [[bench]]
-name = "{{project-name}}-bench"
+name = "day-04"
 path = "benches/benchmarks.rs"
-harness = false
-
-[[bench]]
-name = "{{project-name}}-bench-criterion"
-path = "benches/benchmarks-criterion.rs"
 harness = false
 
 [features]
