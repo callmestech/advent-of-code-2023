@@ -15,11 +15,18 @@ thiserror = { workspace = true }
 dhat = { workspace = true }
 
 [dev-dependencies]
+criterion = { workspace = true }
 divan = { workspace = true }
+rstest = { workspace = true }
 
 [[bench]]
 name = "day-04"
 path = "benches/benchmarks.rs"
+harness = false
+
+[[bench]]
+name = "day-04-bench-criterion"
+path = "benches/benchmarks-criterion.rs"
 harness = false
 
 [features]
