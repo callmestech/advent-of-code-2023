@@ -1,5 +1,5 @@
 [package]
-name = "day-04"
+name = "day-05"
 version = "0.1.0"
 edition = "2021"
 
@@ -20,12 +20,12 @@ divan = { workspace = true }
 rstest = { workspace = true }
 
 [[bench]]
-name = "day-04-bench"
+name = "day-05-bench"
 path = "benches/benchmarks.rs"
 harness = false
 
 [[bench]]
-name = "day-04-bench-criterion"
+name = "day-05-bench-criterion"
 path = "benches/benchmarks-criterion.rs"
 harness = false
 
