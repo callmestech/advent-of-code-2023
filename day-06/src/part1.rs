@@ -22,8 +22,6 @@ fn parse_times(input: &str) -> IResult<&str, (Vec<u32>, Vec<u32>)> {
 #[tracing::instrument]
 pub fn process(input: &str) -> miette::Result<String, AocError> {
     let (_, (times, distances)) = parse_times(input).expect("Should be a valid input.");
-    dbg!(&times);
-    dbg!(&distances);
     let result = times
         .into_iter()
         .zip(distances)
